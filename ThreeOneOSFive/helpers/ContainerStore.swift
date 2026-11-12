@@ -534,7 +534,7 @@ enum ContainerStore {
             "group.com.yangjiii.ThreeOneOSFive"
         ]
         for group in preferredGroups {
-            let handle = worse_query(clean as NSString, group as NSString, true, true)
+            let handle = worse_query(clean, group, true, true)
             if handle >= 0 {
                 log("browser: worse_query grant ok path=\(clean) group=\(group)")
                 return handle
